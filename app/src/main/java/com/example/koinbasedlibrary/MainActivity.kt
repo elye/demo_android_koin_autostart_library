@@ -1,8 +1,10 @@
 package com.example.koinbasedlibrary
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.firstactivitylibrary.FirstActivity
 import com.example.firstfragmentlibrary.FirstFragment
 import com.example.secondfragmentlibrary.SecondFragment
 
@@ -17,6 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.second_button).setOnClickListener {
             supportFragmentManager.beginTransaction().replace(R.id.container, SecondFragment()).commit()
+        }
+
+        findViewById<Button>(R.id.third_button).setOnClickListener {
+            startActivity(Intent(this, FirstActivity::class.java))
         }
     }
 }

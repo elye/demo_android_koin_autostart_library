@@ -16,3 +16,4 @@ rootProject.name = "Koin Based Library"
 include ':app'
 include ':first fragment library'
 include ':second fragment library'
+include ':first activity library'
